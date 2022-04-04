@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusableInTouchMode="true">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_edt_cep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="@color/laranja_claro"
+        app:hintTextColor="@color/laranja_escuro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fb_pesquisar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="8"
+            android:hint="@string/digite_cep"
+            android:textCursorDrawable="@drawable/cursor_style"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_pesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        app:backgroundTint="@color/rosa_claro"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_edt_cep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout_edt_cep"
+        app:layout_constraintTop_toTopOf="@id/layout_edt_cep"
+        app:srcCompat="@drawable/ic_pesquisar_56" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_edt_cep"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_cep"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/cep" />
+
+            <TextView
+                android:id="@+id/txt_logradouro"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/logradouro" />
+
+            <TextView
+                android:id="@+id/txt_complemento"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/complemento" />
+
+            <TextView
+                android:id="@+id/txt_bairro"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/bairro" />
+
+            <TextView
+                android:id="@+id/txt_localidade"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/localidade" />
+
+            <TextView
+                android:id="@+id/txt_uf"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/uf" />
+
+            <TextView
+                android:id="@+id/txt_ibge"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/ibge" />
+
+            <TextView
+                android:id="@+id/txt_gia"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/gia" />
+
+            <TextView
+                android:id="@+id/txt_ddd"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/ddd" />
+
+            <TextView
+                android:id="@+id/txt_siafi"
+                style="@style/Theme.ConsultaCEPRetrofit.formTextView"
+                android:text="@string/siafi" />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

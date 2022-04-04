@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Consulta CEP retrofit</string>
+    <string name="digite_cep">Digite o cep</string>
+    <string name="cep"><b>Cep:</b> %1$s</string>
+    <string name="logradouro"><b>Logradouro:</b> %1$s</string>
+    <string name="complemento"><b>Complemento:</b> %1$s</string>
+    <string name="bairro"><b>Bairro:</b> %1$s</string>
+    <string name="localidade"><b>Localidade:</b> %1$s</string>
+    <string name="uf"><b>UF:</b> %1$s</string>
+    <string name="ibge"><b>IBGE:</b> %1$s</string>
+    <string name="gia"><b>GIA:</b> %1$s</string>
+    <string name="ddd"><b>DDD:</b> %1$s</string>
+    <string name="siafi"><b>SIAFI:</b> %1$s</string>
+
+</resources>
