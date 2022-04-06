@@ -26,7 +26,13 @@ class RestRepository : MainDataSource {
                     callback.onFailure(R.string.erro_servidor)
                 else {
                     val cep: Cep? = response.body()
-                    callback.onSucess(cep)
+
+                    if (cep?.cep != null)
+                        callback.onSucess(cep)
+                    else
+                        callback.onFailure(R.string.erro_cep_inexistente)
+
+
                 }
 
             }

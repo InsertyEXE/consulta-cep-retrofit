@@ -14,5 +14,6 @@
     <string name="erro_mensagem">O campo deve conter 8 dígitos</string>
     <string name="erro_servidor">Cep não encontrado</string>
     <string name="erro_servidor_indisponivel">Servidor indisponível</string>
+    <string name="erro_cep_inexistente">Esse cep não é valido</string>
 
 </resources>
