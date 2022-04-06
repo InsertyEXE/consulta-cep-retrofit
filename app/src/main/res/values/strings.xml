@@ -11,7 +11,7 @@
     <string name="gia"><b>GIA:</b> %1$s</string>
     <string name="ddd"><b>DDD:</b> %1$s</string>
     <string name="siafi"><b>SIAFI:</b> %1$s</string>
-    <string name="erro_mensagem">O campo deve conter 8 diígitos</string>
+    <string name="erro_mensagem">O campo deve conter 8 dígitos</string>
     <string name="erro_servidor">Cep não encontrado</string>
     <string name="erro_servidor_indisponivel">Servidor indisponível</string>
 
