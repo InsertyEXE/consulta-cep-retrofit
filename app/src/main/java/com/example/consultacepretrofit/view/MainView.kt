@@ -11,7 +11,8 @@ interface MainView {
     }
 
     interface View{
-        fun messageFailure(@StringRes errorMessage: Int)
+        fun messageFailure(@StringRes errorMessage: Int?)
         fun consultaSucess(cep: Cep?)
+        fun mascaraEditText()
     }
 }
