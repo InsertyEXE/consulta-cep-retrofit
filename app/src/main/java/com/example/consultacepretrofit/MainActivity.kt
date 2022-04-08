@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), MainView.View {
 
         mascaraEditText()
 
+
         binding.edtCep.addTextChangedListener(TxtWatcher{
             messageFailure(null)
         })
@@ -75,5 +76,5 @@ class MainActivity : AppCompatActivity(), MainView.View {
         }
 
     }
-
 }
+
