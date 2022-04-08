@@ -11,7 +11,7 @@ import retrofit2.Response
 
 class RestRepository : MainDataSource {
 
-    override fun consultaRepository(cepConsulta: String, callback: ApiCallback) {
+    override fun consultaRepository(cepConsulta: String, callbackApi: ApiCallback) {
 
         val retrofit = RetrofitConfig.getInstanceRetrofit("https://viacep.com.br/ws/")
         val retrofitContract = retrofit.create(CEPService::class.java)
@@ -23,14 +23,14 @@ class RestRepository : MainDataSource {
                 //resposta do servidor
 
                 if (!response.isSuccessful)
-                    callback.onFailure(R.string.erro_servidor)
+                    callbackApi.onFailure(R.string.erro_servidor)
                 else {
                     val cep: Cep? = response.body()
 
                     if (cep?.cep != null)
-                        callback.onSucess(cep)
+                        callbackApi.onSucess(cep)
                     else
-                        callback.onFailure(R.string.erro_cep_inexistente)
+                        callbackApi.onFailure(R.string.erro_cep_inexistente)
 
 
                 }
@@ -40,7 +40,7 @@ class RestRepository : MainDataSource {
             override fun onFailure(call: Call<Cep>, t: Throwable) {
 
                 //Servidor inválido
-                callback.onFailure(R.string.erro_servidor_indisponivel)
+                callbackApi.onFailure(R.string.erro_servidor_indisponivel)
             }
 
         })
