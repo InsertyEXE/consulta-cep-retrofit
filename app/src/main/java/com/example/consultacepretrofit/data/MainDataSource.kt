@@ -4,5 +4,5 @@ import com.example.consultacepretrofit.rest.ApiCallback
 
 interface MainDataSource {
 
-    fun consultaRepository(cep: String, callback: ApiCallback)
+    fun consultaRepository(cepConsulta: String, callbackApi: ApiCallback)
 }

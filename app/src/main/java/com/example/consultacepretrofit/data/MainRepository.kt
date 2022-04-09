@@ -4,7 +4,7 @@ import com.example.consultacepretrofit.rest.ApiCallback
 
 class MainRepository(private val dataSource: MainDataSource) {
 
-    fun consultarRepository(cepConsulta: String, callback: ApiCallback ){
-            dataSource.consultaRepository(cepConsulta, callback)
+    fun consultarRepository(cepConsulta: String, callbackApi: ApiCallback ){
+            dataSource.consultaRepository(cepConsulta, callbackApi)
     }
 }
