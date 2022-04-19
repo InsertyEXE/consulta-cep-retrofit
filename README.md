@@ -9,6 +9,10 @@ utiliza frameworks GSON e RETROFIT.
 
 ## Screenshot
 
+1 | 2
+:--:| :--:
+![](https://github.com/InsertyEXE/consulta-cep-retrofit/blob/main/Screenshots/Screenshot_20220419_012158.png)|![](https://github.com/InsertyEXE/consulta-cep-retrofit/blob/main/Screenshots/Screenshot_20220419_012316.png)
+
 ## Features
 * API: <https://viacep.com.br/ws/>
 * Arquitetura: MVP
@@ -28,4 +32,8 @@ utiliza frameworks GSON e RETROFIT.
   * viewBinding: viewBinding{ enabled = true }
 
 ## Aplicativo
- Experimente: 
+ Experimente: [Download Consultar cep](https://github.com/InsertyEXE/consulta-cep-retrofit/blob/main/Consulta%20cep.apk)
+ 
+## TODO
+ - Adicionar onSaveInstanceState para a rotação da tela
+ 
