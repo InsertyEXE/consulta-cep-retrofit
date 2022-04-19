@@ -26,3 +26,6 @@ utiliza frameworks GSON e RETROFIT.
   * Retrofit: com.squareup.retrofit2:retrofit:2.9.0' [Site retrofit squareup](<https://square.github.io/retrofit/>)
   * Gson: 'com.squareup.retrofit2:converter-gson:2.9.0' 
   * viewBinding: viewBinding{ enabled = true }
+
+## Aplicativo
+ Experimente: 
